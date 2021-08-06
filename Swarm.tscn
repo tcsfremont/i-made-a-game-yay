@@ -7,12 +7,38 @@
 script = ExtResource( 2 )
 
 [node name="Alien" parent="." instance=ExtResource( 1 )]
+position = Vector2( -16, -1 )
 
 [node name="rightNotifier" type="VisibilityNotifier2D" parent="."]
-position = Vector2( 34.9233, -0.943871 )
+position = Vector2( 323.923, -1.94387 )
+scale = Vector2( 1.1, 1 )
 
 [node name="leftNotifier" type="VisibilityNotifier2D" parent="."]
-position = Vector2( -33.0356, -0.943871 )
+position = Vector2( -345.036, -1.94387 )
+
+[node name="Alien2" parent="." instance=ExtResource( 1 )]
+position = Vector2( -89, 1 )
+
+[node name="Alien3" parent="." instance=ExtResource( 1 )]
+position = Vector2( 57, -3 )
+
+[node name="Alien4" parent="." instance=ExtResource( 1 )]
+position = Vector2( 140, -2 )
+
+[node name="Alien5" parent="." instance=ExtResource( 1 )]
+position = Vector2( -160, -2 )
+
+[node name="Alien6" parent="." instance=ExtResource( 1 )]
+position = Vector2( -234, -5 )
+
+[node name="Alien7" parent="." instance=ExtResource( 1 )]
+position = Vector2( 211, 2 )
+
+[node name="Alien8" parent="." instance=ExtResource( 1 )]
+position = Vector2( -304, -4 )
+
+[node name="Alien9" parent="." instance=ExtResource( 1 )]
+position = Vector2( 275, -1 )
 
 [connection signal="screen_exited" from="rightNotifier" to="." method="_on_rightNotifier_screen_exited"]
 [connection signal="screen_exited" from="leftNotifier" to="." method="_on_leftNotifier_screen_exited"]
